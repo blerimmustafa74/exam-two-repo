@@ -1,0 +1,52 @@
+$font-family: 'Poppins';
+$red-color: red;
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 600px;
+    overflow-y: scroll;
+    background: white;
+    box-shadow: 10px 20px 10px rgb(165, 165, 165);
+    padding: 40px 20px;
+  }
+
+  #modal.active {
+    display: block;
+  }
+
+  #modal button {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+.heading{
+    text-align: center;
+    font-family: $font-family;
+}
+.content{
+    text-align: center;
+}
+.post-title{
+    font-size: 20px;
+    font-family: $font-family;
+    margin-bottom: 10px;
+}
+.post-body{
+    font-family: $font-family;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.post-userId{
+    color: $red-color;
+    margin-bottom: 10px;
+}
+.add-post{
+    text-align: center;
+}
+.update-post{
+    text-align: center;
+}

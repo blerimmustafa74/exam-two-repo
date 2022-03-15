@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <h1 class="heading">AJAX posts</h1>
+  <div class="add-post">
+    <label for="title">Title</label><br>
+    <input type="text" id="title" placeholder="title">
+    <br>
+    <label for="userId">User ID</label><br>
+    <input type="number" name="userId" id="userId" placeholder="user id">
+    <br><br>
+    <textarea name="body" id="body" cols="30" rows="10"></textarea>
+    <br><br>
+    <button onclick="insertPost()">Inser Post</button>
+  </div>
+  <hr>
+  <div id="posts"></div>
+
+  <div id="modal">
+    <button onclick="closeModal()">X</button>
+    <div id="comments">
+  
+    </div>
+  </div>
+
+  <script src="assets/js/ajax.main.js"></script>
+</body>
+
+
+</html>
