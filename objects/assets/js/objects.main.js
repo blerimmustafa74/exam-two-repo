@@ -33,7 +33,6 @@ function createNewUser() {
 
 function renderHtml(user) {
 userHtml = document.createElement('div');
-userHtml.classList.add('card');
 html = `
     <div class="htmlShow">
         <h1>Name: ${user.name}</h1>
